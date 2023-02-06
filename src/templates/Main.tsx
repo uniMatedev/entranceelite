@@ -16,7 +16,7 @@ const Main = (props: IMainProps) => (
     <div className="mx-auto max-w-screen-md">
       <header className="border-b border-gray-300">
         <div className="flex flex-wrap items-center text-xl ">
-          <Image src="/ee.svg" alt={AppConfig.title} width={50} height={50} />
+          <Image src="/logo.svg" alt={AppConfig.title} width={50} height={50} />
           <h1 className="text-center text-3xl font-bold text-blue-500  ">
             Entrance
           </h1>
