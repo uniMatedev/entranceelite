@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
@@ -14,12 +15,16 @@ const Main = (props: IMainProps) => (
 
     <div className="mx-auto max-w-screen-md">
       <header className="border-b border-gray-300">
-        <div className="pt-16 pb-8">
-          <h1 className="text-3xl font-bold text-gray-900">
-            {AppConfig.title}
+        <div className="flex flex-wrap items-center text-xl ">
+          <Image src="/ee.svg" alt={AppConfig.title} width={50} height={50} />
+          <h1 className="text-center text-3xl font-bold text-blue-500  ">
+            Entrance
           </h1>
-          <h4 className="text-xl">{AppConfig.description}</h4>
+          <h1 className="text-center text-3xl font-bold text-green-500  ">
+            Elite
+          </h1>
         </div>
+
         <nav>
           <ul className="flex flex-wrap text-xl">
             <li className="mr-6">
@@ -39,19 +44,19 @@ const Main = (props: IMainProps) => (
               </Link>
             </li>
             <li className="mr-6">
-              <a
+              <Link
                 className="border-none text-gray-700 hover:text-gray-900"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
+                href="/"
               >
-                GitHub
-              </a>
+                Log In
+              </Link>
             </li>
             <li className="mr-6">
               <Link
                 href="/blog/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
-                Blog
+                Sign Up
               </Link>
             </li>
           </ul>
