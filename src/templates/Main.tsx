@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
+import { HeaderLogo } from '@/components/HeaderLogo';
+import Navigation from '@/components/Navigation';
 import { AppConfig } from '@/utils/AppConfig';
 
 type IMainProps = {
@@ -13,54 +13,14 @@ const Main = (props: IMainProps) => (
   <div className="w-full px-1 text-gray-700 antialiased">
     {props.meta}
 
-    <div className="mx-auto max-w-screen-md">
+    <div className="mx-auto max-w-screen-xl">
       <header className="border-b border-gray-300">
-        <div className="flex flex-wrap items-center text-xl ">
-          <Image src="/logo.svg" alt={AppConfig.title} width={50} height={50} />
-          <h1 className="text-center text-3xl font-bold text-blue-500  ">
-            Entrance
-          </h1>
-          <h1 className="text-center text-3xl font-bold text-green-500  ">
-            Elite
-          </h1>
+        <div className="p-2">
+          <HeaderLogo />
         </div>
-
-        <nav>
-          <ul className="flex flex-wrap text-xl">
-            <li className="mr-6">
-              <Link
-                href="/"
-                className="border-none text-gray-700 hover:text-gray-900"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link
-                href="/about/"
-                className="border-none text-gray-700 hover:text-gray-900"
-              >
-                About
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link
-                className="border-none text-gray-700 hover:text-gray-900"
-                href="/"
-              >
-                Log In
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link
-                href="/blog/"
-                className="border-none text-gray-700 hover:text-gray-900"
-              >
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <Navigation />
+        </div>
       </header>
 
       <main className="content py-5 text-xl">{props.children}</main>
