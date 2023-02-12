@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import { Introduction } from '@/components/Introduction';
 import { TagLine } from '@/components/TagLine';
 import { Meta } from '@/layouts/Meta';
@@ -12,6 +13,13 @@ const Index = () => {
       }
     >
       <div>
+        <Hero
+          backgroundImage="/200logo.png"
+          subtitle="Subtitle"
+          buttonLink=""
+          buttonText="Button"
+          title={'Title'}
+        />
         <TagLine tagLine="Elevating your entrance management" />
         <Introduction />
       </div>
