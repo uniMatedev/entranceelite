@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-auto bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -25,9 +25,12 @@ const Hero: React.FC<HeroProps> = ({
         <p className="mb-12 text-center text-xl text-white md:text-2xl">
           {subtitle}
         </p>
-        <button className="rounded-full bg-red-500 py-3 px-6 text-lg text-white hover:bg-red-600">
+        <button className="rounded-full bg-red-500  py-3 px-6 text-lg text-white hover:bg-red-600">
           {buttonText}
         </button>
+        <h1 className="mb-12 text-center text-xl text-white md:text-2xl">
+          (858) 375-6063
+        </h1>
       </div>
     </div>
   );

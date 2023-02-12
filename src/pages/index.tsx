@@ -14,11 +14,11 @@ const Index = () => {
     >
       <div>
         <Hero
-          backgroundImage="/200logo.png"
-          subtitle="Subtitle"
+          backgroundImage="/sweepingwind.png"
+          subtitle="The EntranceElite Way"
           buttonLink=""
-          buttonText="Button"
-          title={'Title'}
+          buttonText="Get Door Service Now"
+          title={`Revolutionizing Entrance Management`}
         />
         <TagLine tagLine="Elevating your entrance management" />
         <Introduction />
