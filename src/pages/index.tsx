@@ -14,7 +14,7 @@ const Index = () => {
     >
       <div>
         <Hero
-          backgroundImage="/sweepingwind.png"
+          backgroundImage="/cf4.png"
           subtitle="The EntranceElite Way"
           buttonLink=""
           buttonText="Get Door Service Now"

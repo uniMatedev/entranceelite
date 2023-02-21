@@ -16,6 +16,9 @@ const Navigation = () => (
       <li className="mr-6">
         <Link href="/contact">Contact</Link>
       </li>
+      <li className="mr-6">
+        <Link href="/contact">Knowledge Center</Link>
+      </li>
     </ul>
   </nav>
 );
